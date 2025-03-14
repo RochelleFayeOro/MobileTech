@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBtech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+        <style>
+            .about-us-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.mission-statement {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.brand-story {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.call-to-action button {
+    background-color: #6394c9;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.call-to-action button:hover {
+    background-color: #0dc0db;
+}
+
+        </style>
+<body>
+    <div class="main">
+        <header class="navbar">
+            <div class="icon">
+                <h2 class="logo"> MBtech </h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html" class="active">HOME</a></li>
+                    <li><a href="PRODUCT.html">PRODUCT</a></li>
+                    <li><a href="ABOUT.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To Text">
+                <button class="btn">Search</button>
+            </div>
+        </header>
+        <div class="about-us-container">
+            <h1>About Us</h1>
+            <div class="mission-statement">
+                <p>We are a team dedicated to providing the best products to enhance your life. Our mission is to deliver quality and innovation in everything we do.</p>
+            </div>
+            
+            <div class="brand-story">
+                <h2>Our Story</h2>
+                <br><br>
+                <p>Your phone, Our phone, Iphone</p>
+                <p>The MobileTech – Your Ultimate Mobile Companion</p>
+                <p>The MobileTech is more than just a phone; it’s your gateway to a new world of possibilities. With unmatched performance, an incredible camera system, and a sleek, modern design, the MobileTech is built to empower you to do more, experience more, and achieve more.</p>
+                <p>Whether you're capturing stunning moments, staying connected, or enjoying seamless performance, the MobileTech is here to elevate your daily life.</p>
+                <p>Are you ready to take the leap? Experience the future of mobile technology today with the MobileTech.</p>
+            </div>
+            
+        </div>
+        
+        <script>
+            const links = document.querySelectorAll('nav ul li a');
+            
+            links.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    links.forEach(l => l.classList.remove('active'));
+                    e.target.classList.add('active');
+                });
+            });
+        </script>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer>
+            <p>&copy; 2025 MobileTech</p>
+        </footer>
+    </body>
+    </html>
