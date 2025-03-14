@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBtech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <header class="navbar">
+            <div class="icon">
+                <h2 class="logo"> MBtech </h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html" class="active">HOME</a></li>
+                    <li><a href="PRODUCT.html">PRODUCT</a></li>
+                    <li><a href="ABOUT.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To Text">
+                <button class="btn">Search</button>
+            </div>
+        </header>
+
+            <section>
+            <p>Introducing the MobileTech – Power, Performance, and Perfection in Your Hands</p>
+            <p>Say hello to the MobileTech, a revolutionary smartphone designed to push the boundaries of what a phone can do. With cutting-edge features, stunning design, and seamless performance, the Zenith Pro redefines your mobile experience, allowing you to stay ahead of the curve every day.</p>
+        </section>
+
+            <br><br><br>
+            <h3>Key Features:</h3>
+            <ul>
+                <li><b>Next-Level Display:</b> The 6.8-inch Dynamic AMOLED display brings your content to life with ultra-clear, vibrant colors and deep contrasts, perfect for streaming, gaming, and everything in between.</li>
+                <li><b>Powerful Performance:</b> Equipped with the latest chipset and 12GB of RAM, the MobileTech ensures smooth, lightning-fast performance, whether you're multitasking or playing the most demanding games.</li>
+                <li><b>Pro Camera System:</b> Capture every detail with a 108MP quad-camera system, featuring ultra-wide, telephoto, and macro lenses, plus AI-enhanced features for stunning, professional-grade photos and videos.</li>
+                <li><b>Endurance for the Long Haul:</b> With a massive 5000mAh battery and 45W super-fast charging, you can stay connected and powered up all day with minimal downtime.</li>
+                <li><b>5G Ready:</b> Embrace the future with 5G connectivity, ensuring ultra-fast download speeds, low latency, and a seamless online experience.</li>
+            </ul>
+            <br><br><br>
+            <p>The MobileTech is designed to elevate your experience, offering premium performance, incredible features, and unmatched style, all in one sleek device.</p>
+            <p>Unleash the future of mobile technology with the MobileTech.</p>
+        </section>
+        <br><br><br><br><br>
+                   <nav>
+                    <ul> 
+                        <li><a href="ABOUT.html">JOIN US!</a> </li>
+                    </ul>
+                   </nav>
+            <br>
+            <br>
+            <br>
+            <br>
+        
+    
+
+    <script>
+        const links = document.querySelectorAll('nav ul li a');
+        
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                links.forEach(l => l.classList.remove('active'));
+                e.target.classList.add('active');
+            });
+        });
+    </script>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <p>&copy; 2025 MobileTech</p>
+    </footer>
+</body>
+</html>
+
